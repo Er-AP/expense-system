@@ -15,7 +15,7 @@ function App() {
 
   const [expenses, setExpenses] = useState([]);
 
-  const url = "http://localhost:5000/api";
+  const url = `${import.meta.env.VITE_API_URL}/api`;
 
   const token = localStorage.getItem("token");
 
